@@ -1,0 +1,28 @@
+#set("title") {
+  Home
+}
+
+#set("content") {
+  <h2 class="ui teal image header">Tokenizr</h2>
+  <p>A tool to explore <code>NSLinguisticTagger</code>'s behavior.</p>
+
+  #if(matches) {
+    #embed("_results")
+  }
+
+  <form class="ui large form" action="/tokenize" method="post">
+    <div class="field">
+      <div class="ui left icon input">
+        <textarea name="text" placeholder="Enter some text" rows="4" cols="40">#(text)</textarea>
+      </div>
+      <p>
+        Example: <em>The American Red Cross was established in Washington, D.C., by Clara Barton.</em>
+      </p>
+    </div>
+    <button class="ui fluid large teal submit button" type="submit">
+      Tokenize
+    </button>
+  </form>
+}
+
+#embed("master")

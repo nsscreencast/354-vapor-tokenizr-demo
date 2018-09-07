@@ -1,0 +1,8 @@
+<div class="matches">
+  <h3>Results</h3>
+  <ul>
+    #for(match in matches) {
+      <li>#(match)</li>
+    }
+  </ul>
+</div>

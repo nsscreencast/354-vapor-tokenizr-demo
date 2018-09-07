@@ -1,0 +1,33 @@
+body {
+    background-color: #DADADA;
+}
+
+body > .grid {
+    height: 100%;
+}
+
+.image {
+    margin-top: -100px;
+}
+
+.column {
+    max-width: 450px;
+}
+
+.matches {
+  border: solid 3px teal;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.matches p em {
+  color: #666;
+}
+
+.matches ul li {
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.2em;
+}
